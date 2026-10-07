@@ -40,3 +40,6 @@ Thumbs.db
 *.key
 *.p12
 secrets/
+
+# Diretorio privado (repo Railway)
+priv8/
