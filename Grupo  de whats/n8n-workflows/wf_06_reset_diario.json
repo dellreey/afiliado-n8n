@@ -20,7 +20,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/instancias?status=neq.banido",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/instancias?status=neq.banido",
         "method": "PATCH",
         "sendHeaders": true,
         "headerParameters": {
@@ -51,7 +51,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/grupos?status=neq.arquivado",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/grupos?status=neq.arquivado",
         "method": "PATCH",
         "sendHeaders": true,
         "headerParameters": {
