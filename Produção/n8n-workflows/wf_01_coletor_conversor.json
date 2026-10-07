@@ -64,7 +64,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/ofertas?hash_produto=eq.{{ $json.hash_produto }}&select=id&limit=1",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/ofertas?hash_produto=eq.{{ $json.hash_produto }}&select=id&limit=1",
         "method": "GET",
         "sendHeaders": true,
         "headerParameters": {
@@ -106,7 +106,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/ofertas",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/ofertas",
         "method": "POST",
         "sendHeaders": true,
         "headerParameters": {

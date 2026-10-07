@@ -26,7 +26,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/grupos?whatsapp_group_id=eq.{{ $json.group_jid }}&limit=1",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/grupos?whatsapp_group_id=eq.{{ $json.group_jid }}&limit=1",
         "method": "GET",
         "sendHeaders": true,
         "headerParameters": {
@@ -60,7 +60,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/grupos?id=eq.{{ $json.grupo_id }}",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/grupos?id=eq.{{ $json.grupo_id }}",
         "method": "PATCH",
         "sendHeaders": true,
         "headerParameters": {
@@ -91,7 +91,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/log_saude",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/log_saude",
         "method": "POST",
         "sendHeaders": true,
         "headerParameters": {
@@ -151,7 +151,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/grupos?id=eq.{{ $('Calcular Nova Capacidade').item.json.grupo_id }}",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/grupos?id=eq.{{ $('Calcular Nova Capacidade').item.json.grupo_id }}",
         "method": "PATCH",
         "sendHeaders": true,
         "headerParameters": {
@@ -182,7 +182,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/grupos",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/grupos",
         "method": "POST",
         "sendHeaders": true,
         "headerParameters": {

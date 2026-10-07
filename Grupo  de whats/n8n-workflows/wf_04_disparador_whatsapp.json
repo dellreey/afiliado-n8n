@@ -20,7 +20,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/envios?status=eq.agendado&agendado_para=lte.now()&select=id,mensagem_completa,oferta_id,grupo_id,ofertas(id,titulo_original,link_afiliado,imagem_url,preco_por),grupos(id,nome_grupo,whatsapp_group_id,instancias(nome))&limit=3",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/envios?status=eq.agendado&agendado_para=lte.now()&select=id,mensagem_completa,oferta_id,grupo_id,ofertas(id,titulo_original,link_afiliado,imagem_url,preco_por),grupos(id,nome_grupo,whatsapp_group_id,instancias(nome))&limit=3",
         "method": "GET",
         "sendHeaders": true,
         "headerParameters": {
@@ -54,14 +54,14 @@
     },
     {
       "parameters": {
-        "url": "={{ ($env.EVOGO_API_URL || 'http://api:8080') + '/send/link' }}",
+        "url": "={{ ($env.EVOGO_API_URL || 'http://2.25.204.18:8080') + '/send/link' }}",
         "method": "POST",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
             {
               "name": "apikey",
-              "value": "d195a2f6-ca05-4f2e-a2f0-fa63d1de30d6"
+              "value": "={{ $env.EVOGO_API_KEY || '429683C4C977415CAAFCCE10F7D57E11' }}"
             },
             {
               "name": "Content-Type",
@@ -88,7 +88,7 @@
     },
     {
       "parameters": {
-        "url": "={{ $env.SUPABASE_URL || 'https://kwiaddydbjdofcyrqglq.supabase.co' }}/rest/v1/envios?id=eq.{{ $('Preparar Payload Link Preview').item.json.envio_id }}",
+        "url": "={{ $env.SUPABASE_URL || 'https://ofertas-api-production.up.railway.app' }}/rest/v1/envios?id=eq.{{ $('Preparar Payload Link Preview').item.json.envio_id }}",
         "method": "PATCH",
         "sendHeaders": true,
         "headerParameters": {
